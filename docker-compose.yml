@@ -1,0 +1,11 @@
+version: '3.0'
+services:
+  svnserver:
+    container_name: svn-docker
+    build: svn-docker/
+    ports:
+      - "80:80"
+      - "3690:3690"
+    volumes:
+      - "./if.admin/config.ini:/opt/svnadmin/data/config.ini"
+      - "./svn:/home/svn"

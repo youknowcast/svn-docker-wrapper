@@ -1,0 +1,3 @@
+[submodule "svn-docker"]
+	path = svn-docker
+	url = https://github.com/elleFlorio/svn-docker.git
